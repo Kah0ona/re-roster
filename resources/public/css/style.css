@@ -1,0 +1,44 @@
+.roster {
+   overflow-y: hidden;
+}
+
+.roster-row {
+
+}
+
+.roster-cell {
+    border-bottom: 1px solid #ccc;
+    width: 12.5%;
+}
+
+.roster-timeslots {
+   height: 100px;
+}
+
+.roster-timeslot {
+    min-height: 25%;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    overflow-y: visible;
+}
+
+.roster-row .roster-timeslot:last-of-type {
+   border-bottom: none;
+}
+.roster-entry {
+   background-color: orange;
+   border: 1px solid black;
+   width: 100%;
+   height: 200px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 9;
+   margin-right: 2px;
+   margin-left: 2px;
+   cursor: move;
+}
+
+table {
+  border-collapse: collapse;
+}
