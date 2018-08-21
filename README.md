@@ -3,7 +3,7 @@
 A [re-frame](https://github.com/Day8/re-frame) library that shows a week-roster, with an API to schedule things in.
 It doesn't have any dates, so it's not a full blown calendar, rather it's a roster.
 
-[See the demo](https://git)
+[See the demo](https://kah0ona.github.io/re-roster/demo/index.html)
 
 It's pretty alpha, but it works, you can resize appointments, and move them, and add them through a dispatch
 
