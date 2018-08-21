@@ -9,6 +9,9 @@ It's pretty alpha, but it works, you can resize appointments, and move them, and
 
 ## Instructions:
 
+Add the following to your project.clj, if you use leiningen.
+[![Clojars Project](https://img.shields.io/clojars/v/re-roster.svg)](https://clojars.org/re-roster)
+
 ```
 (ns my-ns
   (:require [re-roster.views :as roster]))
