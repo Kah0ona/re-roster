@@ -69,11 +69,15 @@
        [time-slot opts day hour i data])
      (range 0 4))]])
 
+(defn format-hour
+  [h]
+  (str h ":00"))
+
 (defn hour-row
   [opts hour data]
   [:tr.roster-row
    ^{:key :label}
-   [:td.roster-cell.hour-label hour]
+   [:td.roster-cell.hour-label (format-hour hour)]
    (map
     (fn [d]
       ^{:key d}
@@ -82,9 +86,10 @@
 
 (defn drag-mask
   [{:keys [data-subscription id] :as options}]
-  [:div.roster-drag-mask
-   {:on-mouse-move #(rf/dispatch [::events/hover-over id data-subscription])
-    :on-mouse-over #(rf/dispatch [::events/hover-over id data-subscription])}])
+  (let [f #(rf/dispatch [::events/hover-over id data-subscription])]
+    [:div.roster-drag-mask
+     {:on-mouse-move f
+      :on-mouse-over f}]))
 
 (defn roster
   [{:keys [data-subscription id] :as opts}]
@@ -93,8 +98,7 @@
         options   (rf/subscribe [::subs/options id])
         collision (rf/subscribe [::subs/collision id])
         ds        (rf/subscribe [::subs/drag-state id])
-        mouse     (rf/subscribe [::subs/mouse])
-        ]
+        mouse     (rf/subscribe [::subs/mouse])]
     (fn [{:keys [data-subscription id] :as opts}]
       (if (not= opts @options)
         (do

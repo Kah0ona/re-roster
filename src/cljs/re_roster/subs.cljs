@@ -39,7 +39,6 @@
 (defn collides?
   [{x :x y :y :as mouse}
    [{r2 :right l2 :left t2 :top b2 :bottom :as rect} elt]]
-  (debug "x")
   (if (nil? rect)
     false
     (if (not (or (< x l2) (> x r2) (< y t2) (> y b2)))
@@ -110,13 +109,11 @@
  (fn [[_ id]]
    [(rf/subscribe [::mouse])])
  (fn [[mouse ] [_ id]]
-   (debug mouse)
    ;;perf optimization
    (if-not (:down mouse)
      nil
      (if-let [c (collides? mouse (find-data-entry-by-key (:last-collision mouse)))]
-       (do (debug "using cached version")
-           (:last-collision mouse))
+       (:last-collision mouse)
        ;;else
        (let [hour-cells (find-bounding-rects (.getElementsByClassName js/document "roster-timeslots"))]
          (if-let [overlapping-hour-cell (find-collision mouse hour-cells)]

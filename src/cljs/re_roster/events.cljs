@@ -5,8 +5,7 @@
    [re-roster.subs :as subs]
    [day8.re-frame.tracing :refer-macros [fn-traced defn-traced]]
    [taoensso.timbre :refer [debug warn error]]
-   [vimsical.re-frame.cofx.inject :as inject]
-   ))
+   [vimsical.re-frame.cofx.inject :as inject]))
 
 (.addEventListener js/document.body "mouseup" #(rf/dispatch [::mouse-up]))
 (.addEventListener js/document.body "mousedown" #(rf/dispatch [::mouse-down]))
@@ -58,7 +57,6 @@
 (rf/reg-event-db
  ::start-drag
  (fn [db [_ id [day hour slot] direction record-id]]
-   (debug "start drag:" id [day hour slot] direction record-id)
    (assoc-in db [:roster/data id :drag-state] {:k         [day hour slot]
                                                :record-id record-id
                                                :direction direction})))
@@ -122,7 +120,6 @@
        lookup-table ::subs/lookup-table
        collision    ::subs/collision}
       [_ id data-sub]]
-   (debug "hover-over" collision)
    (let [dragging?       (:down mouse)
          update-dispatch (get-in db [:roster/data id :options :update-dispatch])
          {:keys [direction record-id]
@@ -136,7 +133,6 @@
                                 first))
          updated-record  (when (and collision dragging?)
                            (update-record old-record direction collision))]
-     (debug dragging? collision)
      (cond-> {:db db}
        (and dragging?
             collision)           (assoc-in [:db :roster/data id :drag-state :k]

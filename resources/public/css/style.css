@@ -3,10 +3,6 @@
    position: relative;
 }
 
-.roster-row {
-
-}
-
 .roster-cell {
     border: 1px solid #ccc;
     height: 50px;
@@ -65,18 +61,6 @@
    width: 100%;
    flex: 1;
 
-}
-
-.roster-entry .roster-entry-top {
-}
-
-/* todo remove here */
-.my-entry {
-  padding: 10px 20px;
-}
-
-
-.roster-entry .roster-entry-bottom {
 }
 
 .roster-drag-mask {
