@@ -1,7 +1,9 @@
 # re-roster
 
-A [re-frame](https://github.com/Day8/re-frame) library that shows a week-roster, with an API to can schedule appointments/things in.
+A [re-frame](https://github.com/Day8/re-frame) library that shows a week-roster, with an API to schedule things in.
 It doesn't have any dates, so it's not a full blown calendar, rather it's a roster.
+
+[See the demo](https://git)
 
 It's pretty alpha, but it works, you can resize appointments, and move them, and add them through a dispatch
 
@@ -38,6 +40,7 @@ Instructions:
 ```
 Things to note:
 ====
+
 The options should adhere to the spec in `re-roster.specs.roster/options`.
 Example options:
 ```
