@@ -4,6 +4,8 @@
                  [reagent "0.8.1"]
                  [re-frame "0.10.5"]
                  [re-pressed "0.2.2"]
+                 [com.taoensso/timbre "4.10.0"]
+                 [re-frame-utils "0.1.0-SNAPSHOT"]
                  [breaking-point "0.1.2"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]]

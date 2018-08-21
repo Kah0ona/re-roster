@@ -1,5 +1,6 @@
 .roster {
    overflow-y: hidden;
+   position: relative;
 }
 
 .roster-row {
@@ -7,12 +8,13 @@
 }
 
 .roster-cell {
-    border-bottom: 1px solid #ccc;
-    width: 12.5%;
+    border: 1px solid #ccc;
+    height: 50px;
+    padding: 0px;
 }
 
 .roster-timeslots {
-   height: 100px;
+    height: 50px;
 }
 
 .roster-timeslot {
@@ -20,25 +22,79 @@
     border-bottom: 1px solid #ededed;
     position: relative;
     overflow-y: visible;
+    left: 0;
+    top: 0;
+}
+
+.roster-cell.hour-label {
+   text-align: right;
+   padding-right: 10px;
+   color: #ccc;
+   font-size: 10pt;
+   vertical-align: top;
+   border-top: none !important;
+   border-bottom: none !important;
 }
 
 .roster-row .roster-timeslot:last-of-type {
    border-bottom: none;
 }
 .roster-entry {
-   background-color: orange;
-   border: 1px solid black;
-   width: 100%;
-   height: 200px;
+   background-color: #dba334;
+   border: 0px solid black;
    position: absolute;
+   width: 100%;
    top: 0;
    left: 0;
    z-index: 9;
-   margin-right: 2px;
-   margin-left: 2px;
-   cursor: move;
 }
 
-table {
+.roster-drag-handle {
+   background-color: #ce9729;
+   height: 5px;
+   width: 100%;
+   cursor: ns-resize;
+}
+
+.roster-entry {
+   display: flex;
+   flex-direction: column;
+}
+
+.roster-entry-body {
+   width: 100%;
+   flex: 1;
+
+}
+
+.roster-entry .roster-entry-top {
+}
+
+/* todo remove here */
+.my-entry {
+  padding: 10px 20px;
+}
+
+
+.roster-entry .roster-entry-bottom {
+}
+
+.roster-drag-mask {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   z-index: 99999;
+
+}
+
+.roster table {
   border-collapse: collapse;
+  width: 100%;
+}
+
+* {
+   box-sizing: border-box;
+   font-family: Verdana;
 }
