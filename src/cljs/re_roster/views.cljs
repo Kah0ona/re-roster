@@ -124,7 +124,7 @@
    :data-subscription [::subs/my-get-data]
    :update-dispatch   [::events/my-update-dispatch]
    :data-entry-component (fn [e]
-                           [:div.my-entry (:something e)])})
+                           [:div.my-entry "your code renders this"])})
 
 (defn main-panel []
   (let [name  (rf/subscribe [::subs/name])
