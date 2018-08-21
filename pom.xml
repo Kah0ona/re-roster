@@ -3,7 +3,7 @@
   <groupId>re-roster</groupId>
   <artifactId>re-roster</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.2</version>
+  <version>0.1.3</version>
   <name>re-roster</name>
   <description>A clojurescript re-frame component that renders an interactive week roster.</description>
   <url>https://github.com/Kah0ona/re-datagrid.git</url>
@@ -15,7 +15,7 @@
   <scm>
     <connection>scm:git:git://github.com/Kah0ona/re-roster.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/Kah0ona/re-roster.git</developerConnection>
-    <tag>508ddb9c7b44ed592aac4b38e01fc514588080e8
+    <tag>228be922c800baf0a531567d229005e014a5c603
 </tag>
     <url>https://github.com/Kah0ona/re-roster</url>
   </scm>

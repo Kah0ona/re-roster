@@ -1,9 +1,6 @@
 (ns re-roster.views
   (:require
-   [re-frame.core :as re-frame]
    [re-frame.core :as rf]
-   [breaking-point.core :as bp]
-   [re-pressed.core :as rp]
    [re-roster.events :as events]
    [re-roster.subs :as subs]))
 

@@ -3,7 +3,6 @@
    [re-frame.core :as rf]
    [re-roster.db :as db]
    [re-roster.subs :as subs]
-   [day8.re-frame.tracing :refer-macros [fn-traced defn-traced]]
    [taoensso.timbre :refer [debug warn error]]
    [vimsical.re-frame.cofx.inject :as inject]))
 
