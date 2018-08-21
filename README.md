@@ -7,7 +7,7 @@ It doesn't have any dates, so it's not a full blown calendar, rather it's a rost
 
 It's pretty alpha, but it works, you can resize appointments, and move them, and add them through a dispatch
 
-Instructions:
+## Instructions:
 
 ```
 (ns my-ns
@@ -38,8 +38,7 @@ Instructions:
 
 
 ```
-Things to note:
-====
+## Things to note:
 
 The options should adhere to the spec in `re-roster.specs.roster/options`.
 Example options:
