@@ -2,12 +2,9 @@
   (:require
    [reagent.core :as reagent]
    [re-frame.core :as re-frame]
-   [re-pressed.core :as rp]
-   [breaking-point.core :as bp]
    [re-roster.events :as events]
    [re-roster.views :as views]
-   [re-roster.config :as config]
-   ))
+   [re-roster.config :as config]))
 
 
 (defn dev-setup []

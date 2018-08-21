@@ -3,10 +3,10 @@
   <groupId>re-roster</groupId>
   <artifactId>re-roster</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.4</version>
+  <version>0.1.5</version>
   <name>re-roster</name>
   <description>A clojurescript re-frame component that renders an interactive week roster.</description>
-  <url>https://github.com/Kah0ona/re-datagrid.git</url>
+  <url>https://github.com/Kah0ona/re-roster.git</url>
   <licenses>
     <license>
       <name>MIT</name>
@@ -15,7 +15,7 @@
   <scm>
     <connection>scm:git:git://github.com/Kah0ona/re-roster.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/Kah0ona/re-roster.git</developerConnection>
-    <tag>4a73ffbf59087c89c6e71d72456d42a9e973746e
+    <tag>7ed47e986e39ba82c72be1aa2ab1e0f5b0c9af98
 </tag>
     <url>https://github.com/Kah0ona/re-roster</url>
   </scm>
@@ -103,11 +103,6 @@
       <version>0.10.5</version>
     </dependency>
     <dependency>
-      <groupId>re-pressed</groupId>
-      <artifactId>re-pressed</artifactId>
-      <version>0.2.2</version>
-    </dependency>
-    <dependency>
       <groupId>com.taoensso</groupId>
       <artifactId>timbre</artifactId>
       <version>4.10.0</version>
@@ -118,26 +113,9 @@
       <version>0.1.0</version>
     </dependency>
     <dependency>
-      <groupId>breaking-point</groupId>
-      <artifactId>breaking-point</artifactId>
-      <version>0.1.2</version>
-    </dependency>
-    <dependency>
       <groupId>binaryage</groupId>
       <artifactId>devtools</artifactId>
       <version>0.9.10</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>day8.re-frame</groupId>
-      <artifactId>re-frame-10x</artifactId>
-      <version>0.3.3</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>day8.re-frame</groupId>
-      <artifactId>tracing</artifactId>
-      <version>0.5.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
