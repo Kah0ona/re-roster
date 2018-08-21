@@ -145,7 +145,7 @@
        (and dragging? collision) (assoc :dispatch (vec (concat update-dispatch
                                                                [id collision updated-record])))))))
 
-;;; ---- todo move to some demo namespace
+;; ==== DEMO handlers ====
 
 (rf/reg-event-db
  ::add-data

@@ -118,8 +118,7 @@
                [hour-row opts h @data])
              hours))]]]))))
 
-
-;;TODO move to different example/demo namespace
+;; ===== DEMO code =====
 (def demo-opts
   {:id                :my-roster
    :data-subscription [::subs/my-get-data]
@@ -142,11 +141,3 @@
                                                              :timeslot  2}])} "add data"]
        [:p (str @data)]
        [roster demo-opts]])))
-
-
-
-;; --------------------------------------------- todo remove -------------------------
-
-
-;; TODO
-;; add validation of opts?

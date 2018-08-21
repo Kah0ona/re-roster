@@ -145,7 +145,7 @@
    (fn [[options records] [_ id _ day hour timeslot]]
      (get records [day hour timeslot]))))
 
-;;; ---todo move elsewhere
+;; ===== DEMO subs ======
 
 (rf/reg-sub
  ::my-get-data
