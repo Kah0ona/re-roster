@@ -1,4 +1,4 @@
-(defproject re-roster "0.1.0"
+(defproject re-roster "0.1.1"
   :description "A clojurescript re-frame component that renders an interactive week roster."
   :url "https://github.com/Kah0ona/re-datagrid.git"
   :license {:name "MIT"}
